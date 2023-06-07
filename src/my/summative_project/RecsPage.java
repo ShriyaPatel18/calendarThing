@@ -40,6 +40,7 @@ public class RecsPage extends javax.swing.JFrame {
         recsTitle.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         recsTitle.setText("Recommendations");
 
+        horrorButton.setBackground(new java.awt.Color(183, 227, 200));
         horrorButton.setText("Horror");
         horrorButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,14 +48,24 @@ public class RecsPage extends javax.swing.JFrame {
             }
         });
 
+        romanceButton.setBackground(new java.awt.Color(217, 234, 211));
         romanceButton.setText("Romance");
+        romanceButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                romanceButtonActionPerformed(evt);
+            }
+        });
 
+        mysteryButton.setBackground(new java.awt.Color(183, 227, 200));
         mysteryButton.setText("Mystery");
 
+        fantasyButton.setBackground(new java.awt.Color(217, 234, 211));
         fantasyButton.setText("Fantasy");
 
+        comicsButton.setBackground(new java.awt.Color(183, 227, 200));
         comicsButton.setText("Comics");
 
+        nonFictionButton.setBackground(new java.awt.Color(217, 234, 211));
         nonFictionButton.setText("Non-fiction");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -103,6 +114,10 @@ public class RecsPage extends javax.swing.JFrame {
     private void horrorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_horrorButtonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_horrorButtonActionPerformed
+
+    private void romanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_romanceButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_romanceButtonActionPerformed
 
     /**
      * @param args the command line arguments

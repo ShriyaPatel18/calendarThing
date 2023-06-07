@@ -81,6 +81,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="horrorButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="e3" red="b7" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Horror"/>
       </Properties>
       <Events>
@@ -89,26 +92,44 @@
     </Component>
     <Component class="javax.swing.JButton" name="romanceButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="d3" green="ea" red="d9" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Romance"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="romanceButtonActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="mysteryButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="e3" red="b7" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Mystery"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="fantasyButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="d3" green="ea" red="d9" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Fantasy"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="comicsButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="e3" red="b7" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Comics"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="nonFictionButton">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="d3" green="ea" red="d9" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Non-fiction"/>
       </Properties>
     </Component>
