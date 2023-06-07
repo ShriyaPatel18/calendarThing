@@ -26,98 +26,108 @@ public class RecsPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        recsTitle = new javax.swing.JLabel();
-        horrorButton = new javax.swing.JButton();
-        romanceButton = new javax.swing.JButton();
-        mysteryButton = new javax.swing.JButton();
-        fantasyButton = new javax.swing.JButton();
-        comicsButton = new javax.swing.JButton();
-        nonFictionButton = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        mysteryButton1 = new javax.swing.JButton();
+        fantasyButton1 = new javax.swing.JButton();
+        comicsButton1 = new javax.swing.JButton();
+        nonFictionButton1 = new javax.swing.JButton();
+        horrorButton1 = new javax.swing.JButton();
+        romanceButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(560, 358));
 
-        recsTitle.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        recsTitle.setText("Recommendations");
+        jPanel2.setBackground(new java.awt.Color(255, 225, 232));
 
-        horrorButton.setBackground(new java.awt.Color(183, 227, 200));
-        horrorButton.setText("Horror");
-        horrorButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                horrorButtonActionPerformed(evt);
-            }
-        });
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 146, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 346, Short.MAX_VALUE)
+        );
 
-        romanceButton.setBackground(new java.awt.Color(217, 234, 211));
-        romanceButton.setText("Romance");
-        romanceButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                romanceButtonActionPerformed(evt);
-            }
-        });
+        jPanel3.setBackground(new java.awt.Color(255, 153, 102));
 
-        mysteryButton.setBackground(new java.awt.Color(183, 227, 200));
-        mysteryButton.setText("Mystery");
+        mysteryButton1.setBackground(new java.awt.Color(183, 227, 200));
+        mysteryButton1.setText("Mystery");
 
-        fantasyButton.setBackground(new java.awt.Color(217, 234, 211));
-        fantasyButton.setText("Fantasy");
+        fantasyButton1.setBackground(new java.awt.Color(217, 234, 211));
+        fantasyButton1.setText("Fantasy");
 
-        comicsButton.setBackground(new java.awt.Color(183, 227, 200));
-        comicsButton.setText("Comics");
+        comicsButton1.setBackground(new java.awt.Color(183, 227, 200));
+        comicsButton1.setText("Comics");
 
-        nonFictionButton.setBackground(new java.awt.Color(217, 234, 211));
-        nonFictionButton.setText("Non-fiction");
+        nonFictionButton1.setBackground(new java.awt.Color(217, 234, 211));
+        nonFictionButton1.setText("Non-fiction");
+
+        horrorButton1.setBackground(new java.awt.Color(183, 227, 200));
+        horrorButton1.setText("Horror");
+
+        romanceButton1.setBackground(new java.awt.Color(217, 234, 211));
+        romanceButton1.setText("Romance");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(romanceButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(horrorButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(nonFictionButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(comicsButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(fantasyButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(mysteryButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(322, 322, 322))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(45, Short.MAX_VALUE)
+                .addComponent(romanceButton1)
+                .addGap(28, 28, 28)
+                .addComponent(horrorButton1)
+                .addGap(28, 28, 28)
+                .addComponent(nonFictionButton1)
+                .addGap(28, 28, 28)
+                .addComponent(comicsButton1)
+                .addGap(18, 18, 18)
+                .addComponent(fantasyButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(mysteryButton1)
+                .addGap(41, 41, 41))
+        );
+
+        jPanel3Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {comicsButton1, fantasyButton1, horrorButton1, mysteryButton1, nonFictionButton1, romanceButton1});
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(recsTitle))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(nonFictionButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(comicsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(fantasyButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(mysteryButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(romanceButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(horrorButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(416, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(recsTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25)
-                .addComponent(horrorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(romanceButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(mysteryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(fantasyButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(comicsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(nonFictionButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void horrorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_horrorButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_horrorButtonActionPerformed
-
-    private void romanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_romanceButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_romanceButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -155,12 +165,13 @@ public class RecsPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton comicsButton;
-    private javax.swing.JButton fantasyButton;
-    private javax.swing.JButton horrorButton;
-    private javax.swing.JButton mysteryButton;
-    private javax.swing.JButton nonFictionButton;
-    private javax.swing.JLabel recsTitle;
-    private javax.swing.JButton romanceButton;
+    private javax.swing.JButton comicsButton1;
+    private javax.swing.JButton fantasyButton1;
+    private javax.swing.JButton horrorButton1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton mysteryButton1;
+    private javax.swing.JButton nonFictionButton1;
+    private javax.swing.JButton romanceButton1;
     // End of variables declaration//GEN-END:variables
 }
