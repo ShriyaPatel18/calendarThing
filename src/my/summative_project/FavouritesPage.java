@@ -34,7 +34,6 @@ public class FavouritesPage extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(576, 416));
         setSize(new java.awt.Dimension(576, 416));
 
         jPanel1.setBackground(new java.awt.Color(249, 240, 230));
@@ -58,7 +57,7 @@ public class FavouritesPage extends javax.swing.JFrame {
         jTextPane1.setBackground(new java.awt.Color(249, 240, 230));
         jTextPane1.setBorder(null);
         jTextPane1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jTextPane1.setText("book\nbook\nbook\nbook\n");
+        jTextPane1.setText("book\nbook\nbook\nbook\nbook \nbook");
         jTextPane1.setCaretColor(new java.awt.Color(249, 240, 230));
         jTextPane1.setDisabledTextColor(new java.awt.Color(249, 240, 230));
         jScrollPane1.setViewportView(jTextPane1);
@@ -81,8 +80,8 @@ public class FavouritesPage extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jPanel2.setBackground(new java.awt.Color(255, 225, 232));
