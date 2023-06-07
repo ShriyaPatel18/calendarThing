@@ -136,18 +136,28 @@ public class MainPage extends javax.swing.JFrame {
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_exitButtonActionPerformed
 
     private void recsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recsButtonActionPerformed
         // TODO add your handling code here:
+        RecsPage recommend = new RecsPage();
+        recommend.setVisible(true);
+        dispose();
     }//GEN-LAST:event_recsButtonActionPerformed
 
     private void calendarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calendarButtonActionPerformed
         // TODO add your handling code here:
+        CalendarPage calendar = new CalendarPage();
+        calendar.setVisible(true);
+        dispose();
     }//GEN-LAST:event_calendarButtonActionPerformed
 
     private void favouritesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_favouritesButtonActionPerformed
         // TODO add your handling code here:
+        FavouritesPage favourites = new FavouritesPage();
+        favourites.setVisible(true);
+        dispose();
     }//GEN-LAST:event_favouritesButtonActionPerformed
 
     /**
