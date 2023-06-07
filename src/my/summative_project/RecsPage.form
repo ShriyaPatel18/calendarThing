@@ -80,18 +80,18 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="horrorButton1" max="32767" attributes="0"/>
-                      <Component id="romanceButton1" alignment="0" max="32767" attributes="0"/>
-                      <Component id="mysteryButton1" alignment="0" max="32767" attributes="0"/>
-                      <Component id="fantasyButton1" alignment="0" max="32767" attributes="0"/>
-                      <Component id="comicsButton1" alignment="0" max="32767" attributes="0"/>
-                      <Component id="nonFictionButton1" alignment="0" pref="130" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="romanceButton1" min="-2" pref="130" max="-2" attributes="0"/>
+                      <Component id="horrorButton1" min="-2" pref="130" max="-2" attributes="0"/>
+                      <Component id="mysteryButton1" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                      <Component id="fantasyButton1" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                      <Component id="comicsButton1" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                      <Component id="nonFictionButton1" min="-2" pref="130" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" pref="153" max="-2" attributes="0"/>
-                  <EmptySpace pref="38" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="184" max="-2" attributes="0"/>
+                  <EmptySpace pref="32" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -207,7 +207,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Times New Roman" size="18" style="0"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="book                book               book                      book               book"/>
+                <Property name="text" type="java.lang.String" value="book                book               book                      book                       book"/>
               </Properties>
             </Component>
           </SubComponents>
