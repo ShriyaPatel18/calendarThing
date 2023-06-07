@@ -52,6 +52,7 @@ public class RecsPage extends javax.swing.JFrame {
         );
 
         recsMainPanel.setBackground(new java.awt.Color(249, 240, 230));
+        recsMainPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Recommendations", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 18))); // NOI18N
 
         mysteryButton1.setBackground(new java.awt.Color(183, 227, 200));
         mysteryButton1.setText("Mystery");
