@@ -27,6 +27,7 @@ public class RecsPage extends javax.swing.JFrame {
     private void initComponents() {
 
         greenRecsPane = new javax.swing.JPanel();
+        backToMainMenuPage = new javax.swing.JButton();
         recsMainPanel = new javax.swing.JPanel();
         mysteryButton1 = new javax.swing.JButton();
         fantasyButton1 = new javax.swing.JButton();
@@ -42,15 +43,31 @@ public class RecsPage extends javax.swing.JFrame {
         greenRecsPane.setBackground(new java.awt.Color(217, 234, 211));
         greenRecsPane.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        backToMainMenuPage.setBackground(new java.awt.Color(234, 153, 153));
+        backToMainMenuPage.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        backToMainMenuPage.setText("Main Menu\n");
+        backToMainMenuPage.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        backToMainMenuPage.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backToMainMenuPageActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout greenRecsPaneLayout = new javax.swing.GroupLayout(greenRecsPane);
         greenRecsPane.setLayout(greenRecsPaneLayout);
         greenRecsPaneLayout.setHorizontalGroup(
             greenRecsPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 146, Short.MAX_VALUE)
+            .addGroup(greenRecsPaneLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(backToMainMenuPage)
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         greenRecsPaneLayout.setVerticalGroup(
             greenRecsPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 415, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, greenRecsPaneLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(backToMainMenuPage, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         recsMainPanel.setBackground(new java.awt.Color(249, 240, 230));
@@ -107,12 +124,10 @@ public class RecsPage extends javax.swing.JFrame {
         recsMainPanelLayout.setVerticalGroup(
             recsMainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recsMainPanelLayout.createSequentialGroup()
-                .addContainerGap(39, Short.MAX_VALUE)
+                .addContainerGap(46, Short.MAX_VALUE)
                 .addGroup(recsMainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(recsMainPanelLayout.createSequentialGroup()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recsMainPanelLayout.createSequentialGroup()
                         .addComponent(horrorButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(romanceButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -123,8 +138,8 @@ public class RecsPage extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(comicsButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(nonFictionButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30))))
+                        .addComponent(nonFictionButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(20, 20, 20))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -145,6 +160,13 @@ public class RecsPage extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void backToMainMenuPageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backToMainMenuPageActionPerformed
+        // TODO add your handling code here:
+        MainPage main = new MainPage();
+        main.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_backToMainMenuPageActionPerformed
 
     /**
      * @param args the command line arguments
@@ -182,6 +204,7 @@ public class RecsPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backToMainMenuPage;
     private javax.swing.JButton comicsButton1;
     private javax.swing.JButton fantasyButton1;
     private javax.swing.JPanel greenRecsPane;
