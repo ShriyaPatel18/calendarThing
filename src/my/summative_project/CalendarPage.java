@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package my.summative_project;
+import javax.swing.JLabel;
 
 /**
  *
@@ -13,8 +14,13 @@ public class CalendarPage extends javax.swing.JFrame {
     /**
      * Creates new form CalendarPage
      */
+    
+    
     public CalendarPage() {
         initComponents();
+        for (int x=0; x<31; x++){
+            calendarGrid.add(new JLabel(Integer.toString(x)));
+        }
     }
 
     /**
