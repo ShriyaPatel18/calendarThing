@@ -34,8 +34,8 @@ public class RecsPage extends javax.swing.JFrame {
         nonFictionButton1 = new javax.swing.JButton();
         horrorButton1 = new javax.swing.JButton();
         romanceButton1 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        recsTextPane = new javax.swing.JTextPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -80,11 +80,12 @@ public class RecsPage extends javax.swing.JFrame {
         romanceButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         romanceButton1.setText("Romance");
 
-        recsTextPane.setBackground(new java.awt.Color(249, 240, 230));
-        recsTextPane.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        recsTextPane.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        recsTextPane.setText("book                book               book                      book                       book");
-        jScrollPane1.setViewportView(recsTextPane);
+        jTextArea1.setBackground(new java.awt.Color(249, 240, 230));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jTextArea1.setRows(5);
+        jTextArea1.setText("book \nbook");
+        jScrollPane2.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout recsMainPanelLayout = new javax.swing.GroupLayout(recsMainPanel);
         recsMainPanel.setLayout(recsMainPanelLayout);
@@ -99,17 +100,19 @@ public class RecsPage extends javax.swing.JFrame {
                     .addComponent(fantasyButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(comicsButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(nonFictionButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23))
         );
         recsMainPanelLayout.setVerticalGroup(
             recsMainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recsMainPanelLayout.createSequentialGroup()
                 .addContainerGap(39, Short.MAX_VALUE)
-                .addGroup(recsMainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jScrollPane1)
+                .addGroup(recsMainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(recsMainPanelLayout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recsMainPanelLayout.createSequentialGroup()
                         .addComponent(horrorButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(romanceButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -120,8 +123,8 @@ public class RecsPage extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(comicsButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(nonFictionButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(30, 30, 30))
+                        .addComponent(nonFictionButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -183,11 +186,11 @@ public class RecsPage extends javax.swing.JFrame {
     private javax.swing.JButton fantasyButton1;
     private javax.swing.JPanel greenRecsPane;
     private javax.swing.JButton horrorButton1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JButton mysteryButton1;
     private javax.swing.JButton nonFictionButton1;
     private javax.swing.JPanel recsMainPanel;
-    private javax.swing.JTextPane recsTextPane;
     private javax.swing.JButton romanceButton1;
     // End of variables declaration//GEN-END:variables
 }
