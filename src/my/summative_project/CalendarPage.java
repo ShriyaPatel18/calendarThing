@@ -18,7 +18,7 @@ public class CalendarPage extends javax.swing.JFrame {
     
     public CalendarPage() {
         initComponents();
-        for (int x=0; x<31; x++){
+        for (int x=1; x<=42; x++){
             calendarGrid.add(new JLabel(Integer.toString(x)));
         }
     }
@@ -43,7 +43,7 @@ public class CalendarPage extends javax.swing.JFrame {
         calendarPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calendar", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 18))); // NOI18N
 
         calendarGrid.setBackground(new java.awt.Color(207, 226, 243));
-        calendarGrid.setLayout(new java.awt.GridLayout(7, 7));
+        calendarGrid.setLayout(new java.awt.GridLayout(6, 7));
 
         javax.swing.GroupLayout calendarPanelLayout = new javax.swing.GroupLayout(calendarPanel);
         calendarPanel.setLayout(calendarPanelLayout);
