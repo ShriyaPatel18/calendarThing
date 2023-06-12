@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package my.summative_project;
-import javax.swing.JLabel;
+import java.util.Calendar;
+import java.awt.Component;
+import javafx.scene.control.Cell;
 
 /**
  *
@@ -28,7 +30,18 @@ public class CalendarPage extends javax.swing.JFrame {
         setDate();
     }
     private void setDate(){
-        
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, year);
+        calendar.set(Calendar.MONTH, month);
+        int startDay = calendar.get(Calendar.DAY_OF_WEEK) - 1;
+        calendar.add(Calendar.DATE, -startDay);
+        for(Component com:getComponents()){
+            grid cell = (grid) com;
+            cell.setText(calendar.get(Calendar.DATE)+"");
+            cell.setDate(calendar.getTime());
+            cell.currentMonth(calendar.get(Calendar.MONTH)== month - 1);
+            calendar.add(Calendar.DATE, 1);
+        }
     }
 
     @SuppressWarnings("unchecked")
@@ -36,6 +49,13 @@ public class CalendarPage extends javax.swing.JFrame {
     private void initComponents() {
 
         calendarPanel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         calendarGrid = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -72,13 +92,6 @@ public class CalendarPage extends javax.swing.JFrame {
         jButton33 = new javax.swing.JButton();
         jButton34 = new javax.swing.JButton();
         jButton35 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         home = new javax.swing.JButton();
 
@@ -86,6 +99,20 @@ public class CalendarPage extends javax.swing.JFrame {
 
         calendarPanel.setBackground(new java.awt.Color(249, 240, 230));
         calendarPanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calendar", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 0, 18))); // NOI18N
+
+        jLabel1.setText("Sun");
+
+        jLabel2.setText("Mon");
+
+        jLabel3.setText("Tue");
+
+        jLabel4.setText("Wed");
+
+        jLabel5.setText("Thu");
+
+        jLabel6.setText("Fri");
+
+        jLabel7.setText("Sat");
 
         calendarGrid.setBackground(new java.awt.Color(207, 226, 243));
         calendarGrid.setLayout(new java.awt.GridLayout(5, 7));
@@ -205,27 +232,10 @@ public class CalendarPage extends javax.swing.JFrame {
         jButton35.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton35);
 
-        jLabel1.setText("Sun");
-
-        jLabel2.setText("Mon");
-
-        jLabel3.setText("Tue");
-
-        jLabel4.setText("Wed");
-
-        jLabel5.setText("Thu");
-
-        jLabel6.setText("Fri");
-
-        jLabel7.setText("Sat");
-
         javax.swing.GroupLayout calendarPanelLayout = new javax.swing.GroupLayout(calendarPanel);
         calendarPanel.setLayout(calendarPanelLayout);
         calendarPanelLayout.setHorizontalGroup(
             calendarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(calendarPanelLayout.createSequentialGroup()
-                .addComponent(calendarGrid, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 13, Short.MAX_VALUE))
             .addGroup(calendarPanelLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel1)
@@ -239,9 +249,13 @@ public class CalendarPage extends javax.swing.JFrame {
                 .addComponent(jLabel5)
                 .addGap(47, 47, 47)
                 .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(39, 39, 39))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, calendarPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(calendarGrid, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         calendarPanelLayout.setVerticalGroup(
             calendarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -356,7 +370,7 @@ public class CalendarPage extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CalendarPage().setVisible(true);
+               
             }
         });
     }
