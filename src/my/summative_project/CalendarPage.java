@@ -28,19 +28,18 @@ public class CalendarPage extends javax.swing.JFrame {
         
     }
     private void init(){
-        setDate();
+        setDate(2023,6);
     }
-    private void setDate(){
+    public static void setDate(int year, int month){
+       
         Calendar calendar = Calendar.getInstance();
-        int tMonth = calendar.get(Calendar.MONTH);
-        int tYear = calendar.get(Calendar.YEAR);
-        int tDay = calendar.get(Calendar.DAY_OF_MONTH);
-        
         calendar.set(Calendar.YEAR, year);
-        calendar.set(Calendar.MONTH, month);
-        int startDay = calendar.get(Calendar.DAY_OF_WEEK) - 1;
-        calendar.add(Calendar.DATE, -startDay);
+        calendar.set(Calendar.MONTH, month - 1);
+        calendar.set(Calendar.DAY_OF_MONTH, 1);
+        //
+       System.out.println( calendar.get(Calendar.DAY_OF_WEEK));
     }
+
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -116,6 +115,7 @@ public class CalendarPage extends javax.swing.JFrame {
         calendarGrid.setBackground(new java.awt.Color(207, 226, 243));
         calendarGrid.setLayout(new java.awt.GridLayout(5, 7));
 
+        jButton1.setBackground(new java.awt.Color(249, 240, 230));
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,15 +124,19 @@ public class CalendarPage extends javax.swing.JFrame {
         });
         calendarGrid.add(jButton1);
 
+        jButton2.setBackground(new java.awt.Color(249, 240, 230));
         jButton2.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton2);
 
+        jButton3.setBackground(new java.awt.Color(249, 240, 230));
         jButton3.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton3);
 
+        jButton4.setBackground(new java.awt.Color(249, 240, 230));
         jButton4.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton4);
 
+        jButton5.setBackground(new java.awt.Color(249, 240, 230));
         jButton5.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,9 +145,11 @@ public class CalendarPage extends javax.swing.JFrame {
         });
         calendarGrid.add(jButton5);
 
+        jButton6.setBackground(new java.awt.Color(249, 240, 230));
         jButton6.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton6);
 
+        jButton7.setBackground(new java.awt.Color(249, 240, 230));
         jButton7.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,87 +158,115 @@ public class CalendarPage extends javax.swing.JFrame {
         });
         calendarGrid.add(jButton7);
 
+        jButton8.setBackground(new java.awt.Color(249, 240, 230));
         jButton8.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton8);
 
+        jButton9.setBackground(new java.awt.Color(249, 240, 230));
         jButton9.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton9);
 
+        jButton10.setBackground(new java.awt.Color(249, 240, 230));
         jButton10.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton10);
 
+        jButton11.setBackground(new java.awt.Color(249, 240, 230));
         jButton11.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton11);
 
+        jButton12.setBackground(new java.awt.Color(249, 240, 230));
         jButton12.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton12);
 
+        jButton13.setBackground(new java.awt.Color(249, 240, 230));
         jButton13.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton13);
 
+        jButton14.setBackground(new java.awt.Color(249, 240, 230));
         jButton14.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton14);
 
+        jButton15.setBackground(new java.awt.Color(249, 240, 230));
         jButton15.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton15);
 
+        jButton16.setBackground(new java.awt.Color(249, 240, 230));
         jButton16.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton16);
 
+        jButton17.setBackground(new java.awt.Color(249, 240, 230));
         jButton17.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton17);
 
+        jButton18.setBackground(new java.awt.Color(249, 240, 230));
         jButton18.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton18);
 
+        jButton19.setBackground(new java.awt.Color(249, 240, 230));
         jButton19.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton19);
 
+        jButton20.setBackground(new java.awt.Color(249, 240, 230));
         jButton20.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton20);
 
+        jButton21.setBackground(new java.awt.Color(249, 240, 230));
         jButton21.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton21);
 
+        jButton22.setBackground(new java.awt.Color(249, 240, 230));
         jButton22.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton22);
 
+        jButton23.setBackground(new java.awt.Color(249, 240, 230));
         jButton23.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton23);
 
+        jButton24.setBackground(new java.awt.Color(249, 240, 230));
         jButton24.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton24);
 
+        jButton25.setBackground(new java.awt.Color(249, 240, 230));
         jButton25.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton25);
 
+        jButton26.setBackground(new java.awt.Color(249, 240, 230));
         jButton26.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton26);
 
+        jButton27.setBackground(new java.awt.Color(249, 240, 230));
         jButton27.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton27);
 
+        jButton28.setBackground(new java.awt.Color(249, 240, 230));
         jButton28.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton28);
 
+        jButton29.setBackground(new java.awt.Color(249, 240, 230));
         jButton29.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton29);
 
+        jButton30.setBackground(new java.awt.Color(249, 240, 230));
         jButton30.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton30);
 
+        jButton31.setBackground(new java.awt.Color(249, 240, 230));
         jButton31.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton31);
 
+        jButton32.setBackground(new java.awt.Color(249, 240, 230));
         jButton32.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton32);
 
+        jButton33.setBackground(new java.awt.Color(249, 240, 230));
         jButton33.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton33);
 
+        jButton34.setBackground(new java.awt.Color(249, 240, 230));
         jButton34.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         calendarGrid.add(jButton34);
 
+        jButton35.setBackground(new java.awt.Color(249, 240, 230));
         jButton35.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
         jButton35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

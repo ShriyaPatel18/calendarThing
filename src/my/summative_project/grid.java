@@ -32,6 +32,10 @@ public class grid extends JButton{
     public boolean isTitle(){
         return title;
     }
+    
+    public void setDate(Date d){
+        date = d;
+    }
     public void currentMonth(boolean act){
         if(act){
             setForeground(new Color(68,68,68));

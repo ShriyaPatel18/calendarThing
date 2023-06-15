@@ -164,7 +164,7 @@ public class MainPage extends javax.swing.JFrame {
 
     private void calendarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calendarButtonActionPerformed
         // TODO add your handling code here:
-        CalendarPage calendar = new CalendarPage();
+        Calendar2 calendar = new Calendar2();
         calendar.setVisible(true);
         dispose();
     }//GEN-LAST:event_calendarButtonActionPerformed
